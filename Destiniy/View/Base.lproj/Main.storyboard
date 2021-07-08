@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destini_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-au-KDH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7tU-5p-e4X">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="str-AN-aCp">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="558"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZc-zg-FeZ">
+                                        <rect key="frame" x="0.0" y="578" width="394" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="L5h-8q-2jk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 1" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBu-P2-oSd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgn-Rh-sX0">
+                                        <rect key="frame" x="0.0" y="698" width="394" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="vLF-3Q-jur"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 2" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRq-E8-TbV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mS7-au-KDH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C7L-PZ-eHC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7tU-5p-e4X" secondAttribute="trailing" constant="10" id="G71-sk-zIK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7tU-5p-e4X" secondAttribute="bottom" constant="10" id="PED-zW-DAA"/>
+                            <constraint firstItem="7tU-5p-e4X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="XRG-U3-zIL"/>
+                            <constraint firstAttribute="trailing" secondItem="mS7-au-KDH" secondAttribute="trailing" id="Xfx-gB-Aoe"/>
+                            <constraint firstAttribute="bottom" secondItem="mS7-au-KDH" secondAttribute="bottom" id="Yyy-B1-eGt"/>
+                            <constraint firstItem="mS7-au-KDH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dNm-q7-it8"/>
+                            <constraint firstItem="7tU-5p-e4X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nVl-m3-O3e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1" destination="OZc-zg-FeZ" id="tGa-1e-DR8"/>
+                        <outlet property="choice2" destination="pgn-Rh-sX0" id="gGg-2W-7Yp"/>
+                        <outlet property="label" destination="str-AN-aCp" id="WUv-7z-qX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
